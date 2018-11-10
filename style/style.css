@@ -1,0 +1,219 @@
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+}
+
+main {
+    background-image: url("../img/background.png");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+}
+
+.nav{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+.input {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-decoration: none !important;
+}
+
+body, html {
+    width: 100%;
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+    animation: AnimationName 30s ease infinite;
+}
+
+html {
+    height: 100%;
+}
+
+@-webkit-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@-moz-keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes AnimationName {
+    0% {
+        background-position: 0% 50%
+    }
+    50% {
+        background-position: 100% 50%
+    }
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+#title, #title h1 {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    transform: translate(-50%, -50%);
+}
+
+.teamalign {
+    position: relative;
+    text-align: center;
+}
+
+.team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 100px;
+    grid-row-gap: 100px;
+
+}
+
+.team img {
+    border-radius: 100%;
+    filter: grayscale(100%);
+    transition: .5s;
+    box-shadow: 0px 0px 50px white;
+}
+
+.team img:hover {
+    width: 250.1px;
+    height: 250.1px;
+    transition: .25s;
+    filter: grayscale(0%);
+    box-sizing: border-box;
+}
+
+/*  */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 40%;
+    border-radius: 40px;
+}
+
+.modal-content img {
+    border-radius: 20px;
+}
+
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#profile {
+    float: left;
+    margin-right: 10px;
+}
+
+.footer {
+    background: #2065a5;
+    width: 100%;
+}
+
+/* FAQ */
+
+#vraaghead{
+  font-family: 'Source Sans Pro', sans-serif;
+}
+#vraag{
+  font-weight: bold;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
+  background-color: white;
+  outline: none;
+}
+
+#vraag:focus{
+  background-color:#d9d9d9;
+}
+
+/* contact */
+.verstuurtjes{
+  font-family: 'Source Sans Pro', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: black;
+}
+
+.verstuurtjes input, textarea{
+  width: 200px;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   box-sizing: border-box;
+}
+
+.verstuurtjes input:focus, textarea:focus{
+background-color:#d9d9d9;
+}
